@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Still Wild</title>
-  <meta name="description" content="Still Wild — Running Monkey Games, Still Wild Publishing, and Camp Babbling Brook.">
-
+  <title>Still Wild — Games, Stories, and Independent Projects</title>
+  <meta name="description" content="Still Wild is home to Running Monkey Games, Still Wild Publishing, and Camp Babbling Brook — independent games, hard science fiction, and small tools built outside the lines.">
   <!-- AdSense verification snippet -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3377652388961369"
      crossorigin="anonymous"></script>
-
   <style>
     :root {
       --bg: #0e1512;
@@ -19,122 +17,117 @@
       --accent: #6fbf73;
       --border: #24322b;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
-      min-height: 100vh;
       background: var(--bg);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 4rem 1.5rem 2rem;
+      line-height: 1.6;
     }
-
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
     header {
-      text-align: center;
       margin-bottom: 3rem;
     }
-
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       letter-spacing: 0.02em;
-      margin: 0 0 0.5rem;
+      margin: 0 0 0.75rem;
     }
-
     header p {
       color: var(--muted);
       margin: 0;
       font-size: 1.05rem;
+      max-width: 60ch;
     }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-      width: 100%;
-      max-width: 900px;
-    }
-
-    .card {
+    section {
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 1.75rem;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+    section h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.35rem;
+    }
+    section p {
+      margin: 0 0 0.75rem;
       color: var(--text);
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
     }
-
-    .card h2 {
-      margin: 0;
-      font-size: 1.25rem;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
-
-    .card.soon {
+    section p:last-child { margin-bottom: 0; }
+    section.soon {
       border-style: dashed;
     }
-
-    .card.soon h2 {
+    section.soon h2 {
       color: var(--muted);
     }
-
-    footer {
+    nav.footer-links {
       margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    nav.footer-links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    nav.footer-links a:hover { text-decoration: underline; }
+    footer.copyright {
+      margin-top: 1.5rem;
       color: var(--muted);
       font-size: 0.85rem;
-      text-align: center;
     }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <header>
+      <h1>Still Wild</h1>
+      <p>Still Wild is an independent studio and small publishing imprint building games, hard science fiction, and the occasional utility app. Everything here is made by a small team who ships slowly, in public, and prefers finishing real projects over chasing trends.</p>
+    </header>
 
-  <header>
-    <h1>Still Wild</h1>
-    <p>Games, stories, and other things built outside the lines.</p>
-  </header>
-
-  <div class="cards">
-    <div class="card">
+    <section>
       <h2>Running Monkey Games</h2>
-      <p>Mobile and web games from Running Monkey Games.</p>
-    </div>
+      <p>Running Monkey Games is our mobile and web game development label. Projects range from small utility-style apps like PhotoBlaster, a photo editing and effects app for Android, to VideoBlaster, its in-progress video counterpart built with React Native and Expo. We also prototype original game concepts, including Water Maze, a physics-based puzzle game currently being built out in Unreal Engine 5.</p>
+      <p>Our approach favors small, focused apps that do one thing well over bloated feature lists — built independently, from concept through Play Store release.</p>
+    </section>
 
-    <div class="card">
+    <section>
       <h2>Still Wild Publishing</h2>
-      <p>Hard science fiction, including <em>Around the Moon in a Day</em>.</p>
-    </div>
+      <p>Still Wild Publishing is our self-publishing imprint for hard science fiction, releasing work under the pen name Michael Jayne. Our flagship title, <em>Around the Moon in a Day</em>, is a hard sci-fi novella grounded in real orbital mechanics and spaceflight engineering, paired with a companion website and a cinematic Three.js-based moon flyover built from real NASA Lunar Reconnaissance Orbiter mesh data.</p>
+      <p>The goal with every release is scientific plausibility first — stories that could plausibly happen with the physics we actually have, not the physics we wish we had.</p>
+    </section>
 
-    <div class="card">
+    <section>
       <h2>Camp Babbling Brook</h2>
-      <p>More from the Still Wild family.</p>
-    </div>
+      <p>Camp Babbling Brook is our slower-paced, ongoing brand under the Still Wild umbrella — a home for smaller, more personal projects that don't fit neatly under games or publishing. Think of it as the workshop where ideas get tested before they graduate into their own thing.</p>
+    </section>
 
-    <div class="card">
+    <section>
       <h2>HiFi Tool</h2>
-      <p>A Still Wild utility, in progress.</p>
-    </div>
+      <p>HiFi Tool is a utility currently in development under the Still Wild name. Details will be added here as the project takes shape and moves toward release.</p>
+    </section>
 
-    <div class="card soon">
+    <section class="soon">
       <h2>More to come</h2>
-      <p>New projects join the family regularly.</p>
-    </div>
+      <p>New projects join the Still Wild family on an ongoing basis, spanning games, fiction, and small independent tools. Check back for updates as they're released.</p>
+    </section>
+
+    <nav class="footer-links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <footer class="copyright">
+      &copy; 2026 Still Wild. All rights reserved.
+    </footer>
   </div>
-
-  <footer>
-    &copy; 2026 Still Wild. All rights reserved.
-  </footer>
-
 </body>
 </html>
